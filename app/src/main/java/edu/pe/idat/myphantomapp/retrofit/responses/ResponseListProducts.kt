@@ -1,7 +1,12 @@
 package edu.pe.idat.myphantomapp.retrofit.responses
 
 import com.google.gson.annotations.SerializedName
+data class ProviderMetadata (
 
+    @SerializedName("public_id"     ) var publicId     : String? = null,
+    @SerializedName("resource_type" ) var resourceType : String? = null
+
+)
 data class AttributesPicture (
 
     @SerializedName("name"              ) var name             : String? = null,
@@ -16,7 +21,7 @@ data class AttributesPicture (
     @SerializedName("url"               ) var url              : String? = null,
     @SerializedName("previewUrl"        ) var previewUrl       : String? = null,
     @SerializedName("provider"          ) var provider         : String? = null,
-    @SerializedName("provider_metadata" ) var providerMetadata : String? = null,
+    @SerializedName("provider_metadata" ) var providerMetadata : ProviderMetadata? = ProviderMetadata(),
     @SerializedName("createdAt"         ) var createdAt        : String? = null,
     @SerializedName("updatedAt"         ) var updatedAt        : String? = null
 

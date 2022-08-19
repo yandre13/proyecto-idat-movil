@@ -27,8 +27,8 @@ class ProductAdapter(private var listProducts: ResponseListProducts): RecyclerVi
                 binding.tvProductPrice.text = attributes?.price.toString()
                 binding.tvProductStock.text = attributes?.stock.toString()
                 Glide.with(holder.itemView.context)
-//                    .load("${Env().DOMAIN_URL}${attributes?.picture?.data?.attributes?.url}")
-                    .load("https://phantom.pe/pub/media/catalog/product/cache/71a032b60710d907b279b6023a79a12b/p/s/ps5_playstation_5_disco_ranura_1_1.jpg")
+                    .load("${attributes?.picture?.data?.attributes?.url}")
+                    //.load("https://www.notebookcheck.org/fileadmin/_processed_/0/9/csm_Sony_Playstation_5_Pro_Rendervideo_ccb1030d9d.jpg")
                     .into(binding.ivProductImage)
             }
         }
