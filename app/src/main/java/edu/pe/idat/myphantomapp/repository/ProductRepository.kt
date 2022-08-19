@@ -21,6 +21,7 @@ class ProductRepository {
                 call: Call<ResponseListProducts>,
                 response: Response<ResponseListProducts>
             ) {
+                Log.e("_______________________________", response.body().toString())
                 listProductsResponse.value = response.body()
             }
 

@@ -9,4 +9,9 @@
         android:name="edu.pe.idat.myphantomapp.view.fragments.ListProductsFragment"
         android:label="fragment_list_products"
         tools:layout="@layout/fragment_list_products" />
+    <fragment
+        android:id="@+id/nav_maps_frag"
+        android:name="edu.pe.idat.myphantomapp.view.fragments.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

@@ -28,7 +28,6 @@ class ProductAdapter(private var listProducts: ResponseListProducts): RecyclerVi
                 binding.tvProductStock.text = attributes?.stock.toString()
                 Glide.with(holder.itemView.context)
                     .load("${attributes?.picture?.data?.attributes?.url}")
-                    //.load("https://www.notebookcheck.org/fileadmin/_processed_/0/9/csm_Sony_Playstation_5_Pro_Rendervideo_ccb1030d9d.jpg")
                     .into(binding.ivProductImage)
             }
         }
